@@ -1,0 +1,16 @@
+{
+  "name": "node.ly",
+  "version": "1.0.0",
+  "description": "Serverless Node Project with David Baek and Jerry Chen",
+  "main": "index.js",
+  "repository": "https://github.com/misodope/node.ly.git",
+  "author": "Jerry Chen <misodope@cap-rx.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.28.3",
+    "eslint": "^7.30.0",
+    "eslint-plugin-react": "^7.24.0",
+    "typescript": "^4.3.5"
+  }
+}
