@@ -56,14 +56,13 @@ resource "aws_amplify_app" "nodely" {
   }
 }
 
-resource "aws_amplify_branch" "master" {
+resource "aws_amplify_branch" "main" {
   app_id      = aws_amplify_app.nodely.id
   branch_name = "main"
 
   framework = "React"
   stage     = "PRODUCTION"
 
-  basic_auth_config {
-
-  }
+  enable_basic_auth = true
+  basic_auth_credentials = base64encode("${var.github_username}:${var.github_password}")
 }
