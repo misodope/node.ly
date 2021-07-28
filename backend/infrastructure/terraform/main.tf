@@ -62,4 +62,8 @@ resource "aws_amplify_branch" "master" {
 
   framework = "React"
   stage     = "PRODUCTION"
+
+  basic_auth_config {
+
+  }
 }
